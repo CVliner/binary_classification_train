@@ -1,4 +1,4 @@
-# Handling Complex Images - Happy or Sad Dataset
+### Handling Complex Images - Happy or Sad Dataset
 
 
 In this project you will be using the happy or sad dataset, which contains 80 images of emoji-like faces, 40 happy and 40 sad.
@@ -22,7 +22,7 @@ Keras provides great support for preprocessing image data. A lot can be accompli
 Found 80 images belonging to 2 classes.
 ```
 
-## Creating and training your model
+### Creating and training your model
 
 Finally, complete the `train_happy_sad_model` function below. This function should return your  neural network.
 
