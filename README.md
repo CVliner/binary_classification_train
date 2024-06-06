@@ -17,7 +17,7 @@ The images should have a resolution of 150x150. **This is very important because
 
 Keras provides great support for preprocessing image data. A lot can be accomplished by using the `ImageDataGenerator` class. Be sure to check out the [docs](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator) if you get stuck in the next exercise. In particular you might want to pay attention to the `rescale` argument when instantiating the `ImageDataGenerator` and to the [`flow_from_directory`](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator#flow_from_directory) method.
 
-"""**Expected Output:**
+**Expected Output:**
 ```
 Found 80 images belonging to 2 classes.
 ```
