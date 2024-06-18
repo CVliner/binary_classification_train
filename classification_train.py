@@ -47,7 +47,6 @@ def image_generator():
                                                         target_size=(150, 150),
                                                         batch_size=32,
                                                         class_mode='binary')
-    ### END CODE HERE
 
     return train_generator
 
