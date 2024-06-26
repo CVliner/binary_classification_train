@@ -88,7 +88,7 @@ def train_happy_sad_model(train_generator):
     # Your model should achieve the desired accuracy in less than 15 epochs.
     # You can hardcode up to 20 epochs in the function below but the callback should trigger before 15.
     history = model.fit(x=train_generator,
-                        epochs=20,
+                        epochs=15,
                         callbacks=[callbacks]
                        ) 
 
