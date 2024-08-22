@@ -85,8 +85,6 @@ def train_happy_sad_model(train_generator):
 
 
     # Train the model
-    # Your model should achieve the desired accuracy in less than 15 epochs.
-    # You can hardcode up to 20 epochs in the function below but the callback should trigger before 15.
     history = model.fit(x=train_generator,
                         epochs=15,
                         callbacks=[callbacks]
@@ -95,12 +93,6 @@ def train_happy_sad_model(train_generator):
     return history
 
 hist = train_happy_sad_model(gen)
-
-"""If you see the message that was defined in the callback printed out after less than 15 epochs it means your callback worked as expected and training was successful. You can also double check by running the following cell:"""
-
-print(f"Your model reached the desired accuracy after {len(hist.epoch)} epochs")
-
-"""If your callback didn't stop training, one cause might be that you compiled your model using a metric other than `accuracy` (such as `acc`). Make sure you set the metric to `accuracy`. You can check by running the following cell:"""
 
 if not "accuracy" in hist.model.metrics_names:
     print("Use 'accuracy' as metric when compiling your model.")
